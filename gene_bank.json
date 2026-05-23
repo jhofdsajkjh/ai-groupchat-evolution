@@ -492,5 +492,13 @@
     "level": "theory",
     "context": "        # Check if this is a local attention layer\n        self.is_local_attention = config.layer_types[layer_idx] == \"sliding_attention\"\n        self.sliding_window = config.sliding_window if self.is",
     "extracted_at": "2026-05-24T03:34:24.423066"
+  },
+  {
+    "id": "gene_039",
+    "name": "张量并行",
+    "category": "code_gene",
+    "source": "github:vllm-project/vllm/benchmarks/benchmark_batch_invariance.py",
+    "context": "            max_model_len=max_model_len,\n            dtype=\"bfloat16\",\n            tensor_parallel_size=tp_size,\n            attention_config={\"backend\": backend},\n            enable_prefix_caching=Fa",
+    "extracted_at": "2026-05-24T03:38:12.240083"
   }
 ]

@@ -1,26 +1,32 @@
-# AI群聊自主进化系统
+# AI GroupChat Evolution
+[![Stars](https://img.shields.io/github/stars/jhofdsajkjh/ai-groupchat-evolution?style=social)](https://github.com/jhofdsajkjh/ai-groupchat-evolution)
+Status: Stable | License: MIT
 
-> 基于Hermes Agent + 飞书群聊的自动化基因提取与演进闭环
+## Features
+- 群聊进化：群体对话驱动的知识抽取与基因生成
+- 进化日志：记录每次进化关键信息
+- 基因银行：结构化存储进化基因
 
-## 系统概述
+## Installation
+\`\`\`bash
+git clone https://github.com/jhofdsajkjh/ai-groupchat-evolution.git
+cd ai-groupchat-evolution
+pip install -r requirements.txt
+\`\`\`
 
-本系统让AI能够在飞书群聊环境中实现**自主持续进化**，无需人工干预即可：
-- 从顶级AI开源项目提取代码基因
-- 自动积累并优化基因库
-- 定期同步到GitHub实现持久化
+## Usage
+\`\`\`bash
+python scripts/evolve.py
+\`\`\`
 
-## 核心机制
+## Architecture
+- \`gene_bank.json\`: 基因库
+- \`scripts/\`: 进化脚本
+- \`EVOLUTION_LOG.md\`: 进化日志
+- \`SYSTEM.md\`: 系统说明
 
-```
-定时触发 → GitHub提取基因 → 基因库更新 → 飞书推送报告 → GitHub持久化
-```
-
-## 演进状态
-
-- 演进周期: 每2小时自动执行
-- 推送渠道: 飞书群聊
-- 持久化: GitHub仓库实时同步
+## Contributing
+提交前更新日志。
 
 ## License
-
 MIT
